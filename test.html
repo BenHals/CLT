@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel = "stylesheet" href="index.css">
+        <link rel = "stylesheet" href="third_party/bootstrap/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="AnimFramework/AnimElement.js"></script>
+        <script src="AnimFramework/AnimElementRenderer.js"></script>
+        <script src="AnimFramework/AnimStageHelpers.js"></script>
+        <script src="AnimFramework/AnimKnitter.js"></script>
+        <script src="AnimFramework/AnimController.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="display" id="main_display">
+            </div>
+            <div class="controls">
+                <div id="visControls">
+                    <div id="buttonBar">
+                      <button type="button" class="btn btn-default" aria-label="Back" onclick="">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      </button>
+                      <button id="pausePlay" type="button" class="btn btn-default" aria-label="Back" onclick="pauseToggle()">
+                        <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-default" aria-label="Back" onclick="">
+                        <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-default" aria-label="Back" onclick="">
+                        <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-default" aria-label="Back" onclick="">
+                        <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-default" aria-label="Back" onclick="">
+                        <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-default" aria-label="Back" onclick="">
+                        <span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-default" aria-label="Back" onclick="">
+                        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                    <input id="visAnimProgress" type="range" min="0" list="stages">
+                    <datalist id="stages"></datalist>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
